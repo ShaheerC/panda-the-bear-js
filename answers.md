@@ -1,3 +1,5 @@
+# PART 1 
+
 # 1.1 
 - In console type document
 - let newImg = document.querySelector('.profile-mage')
@@ -15,7 +17,7 @@
 - let employment = document.querySelector('#employment > .info-title')
 - employment.innerText = "Experience"
 
-#4
+# 4
 - let bodybg = document.querySelector('body')
 - bodybg.style.backgroundColor = 'purple'
 
@@ -58,3 +60,23 @@
 # 14
 - let bioParent = document.querySelector('.bio-info')
 - highlightAll[0].removeChild(bioParent)
+
+# PART 2
+
+# 1.1
+- let parentDiv = document.querySelector('section > div')
+- let timeTravel = document.querySelectorAll('.bar-default')
+- parentDiv.removeChild(timeTravel[2])
+
+# 1.2
+- let pikaImg2 = document.querySelector('#right-image > img')
+- let dupPika2 = pikaImg2.cloneNode()
+- let portfolio = document.querySelector('.portfolio-container')
+- portfolio.appendChild(dupPika2)
+
+# 2
+- for(let i = 0; i < 10; i++) {
+	let pikaDupe = document.createElement('img')
+	pikaDupe.src = "images/pikachu-drawing.jpg"
+	portfolio.appendChild(pikaDupe)	
+}
