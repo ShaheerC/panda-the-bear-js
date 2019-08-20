@@ -80,3 +80,19 @@
 	pikaDupe.src = "images/pikachu-drawing.jpg"
 	portfolio.appendChild(pikaDupe)	
 }
+
+# 3
+- const listItem = document.createElement('li')
+- const leftSpan = document.createElement('span')
+- let lastUpdated = document.createTextNode('Page last updated on')
+- leftSpan.appendChild(lastUpdated)
+- listItem.appendChild(leftSpan)
+- let bioUl = document.querySelector('.bio-info')
+- let rightSpan = document.createElement('span')
+- let time = document.createTextNode(new Date())
+- rightSpan.appendChild(time)
+- listItem.appendChild(rightSpan)
+- bioUl.appendChild(listItem)
+- listItem.className = 'bio-info-item'
+- leftSpan.className = 'bio-info-title'
+- rightSpan.className = 'bio-info-value bio-info-time'
